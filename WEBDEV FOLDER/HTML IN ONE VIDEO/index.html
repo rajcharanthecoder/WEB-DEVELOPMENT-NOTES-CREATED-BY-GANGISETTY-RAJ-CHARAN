@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>My First Heading</h1>
+    <p>My first paragraph.</p>
+    html tags
+
+    <h1>to<h6>
+            <p></p>
+            <a href="https://www.google.com/">google</a>
+            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+                alt="google logo">
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ul>
+
+            <ol>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ol>
+
+            <table>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>Jill</td>
+                    <td>Smith</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Eve</td>
+                    <td>Jackson</td>
+                    <td>94</td>
+                </tr>
+            </table>
+
+            <form action="form.json">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="John"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+
+            <div>
+                <h1>My First Heading</h1>
+                <p>My first paragraph.</p>
+            </div>
+
+            <span>My First Heading</span>
+
+            <button>Click Me!</button>
+
+            <input type="text" value="John">
+
+            <select>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+
+            <textarea name="message" rows="10" cols="30">
+        The cat was playing in the garden.
+    </textarea>
+
+            <iframe src="https://www.w3schools.com"></iframe>
+
+            <audio controls>
+                <source src="horse.ogg" type="audio/ogg">
+                <source src="horse.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+
+            </audio>
+
+            <video width="320" height="240" controls>
+                <source src="movie.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+
+            <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+                Your browser does not support the HTML5 canvas tag.
+            </canvas>
+
+            <script>
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext("2d");
+                ctx.font = "30px Arial";
+                ctx.strokeText("Hello World", 10, 50);
+            </script>
+
+            <style>
+                h1 {
+                    color: red;
+                    text-align: center;
+                }
+
+                p {
+                    font-family: verdana;
+                    font-size: 20px;
+                }
+
+                .center {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 50%;
+                }
+            </style>
+
+            <h1 style="color:blue;text-align:center;">A Blue Heading</h1>
+
+            <h1 class="center">Centered Heading</h1>
+
+            <!-- <S>Hi</S>
+    <sub>Hi</sub> -->
+            <!--Html physical and logical elements-->
+            <sup>O</sup><sub>2</sub>
+
+            <p>My <b>first</b> paragraph.</p>
+
+            <p>My <strong>first</strong> paragraph.</p>
+
+            <p>My <i>first</i> paragraph.</p>
+
+            <p>My <em>first</em> paragraph.</p>
+
+            <p>My <mark>first</mark> paragraph.</p>
+
+            <p>My <small>first</small> paragraph.</p>
+
+            <p>My <del>first</del> paragraph.</p>
+
+            <p>My <ins>first</ins> paragraph.</p>
+
+            <p>My <u>first</u> paragraph.</p>
+
+            <p>My <code>first</code> paragraph.</p>
+
+            <p>My <kbd>first</kbd> paragraph.</p>
+
+            <p>My <samp>first</samp> paragraph.</p>
+
+            <p>My <var>first</var> paragraph.</p>
+
+            <p>My <cite>first</cite> paragraph.</p>
+
+            <p>My <abbr>first</abbr> paragraph.</p>
+
+            <p>My <dfn>first</dfn> paragraph.</p>
+
+            <p>My <time>first</time> paragraph.</p>
+
+            <p>My <q>first</q> paragraph.</p>
+
+            <p>My <bdo dir="rtl">first</bdo> paragraph.</p>
+
+            <p>My <span>first</span> paragraph.</p>
+
+            <p>My <br>first paragraph.</p>
+
+            <p>My <wbr>first paragraph.</p>
+
+            <p>My <bdi>first</bdi> paragraph.</p>
+
+            <p>My <bdi dir="rtl">first</bdi> paragraph.</p>
+
+            <p>My <bdi dir="ltr">first</bdi> paragraph.</p>
+
+            <p>My <bdi dir="auto">first</bdi> paragraph.</p>
+
+            <!-- Physical elements -->
+        <B>Welcome</B><br>
+<I>Welcome</I><br>
+<U>Welcome</U><br>
+<TT>Welcome</TT><br>
+<STRIKE>Welcome</STRIKE> or
+<S>Welcome</S><br>
+Wel<SUB>come</SUB><br>
+Wel<SUP>come</SUP><br>
+<BIG>Welcome</BIG><br>
+<SMALL>Welcome</SMALL><br>
+    
+
+
+<!--Logical elements-->
+
+<abbr></abbr>
+<samp></samp>
+<dfn></dfn>
+<em></em>
+<kbd></kbd>
+<var></var>
+<code></code>
+<q></q>
+<time></time>
+<mark></mark>
+<del></del>
+<ins></ins>
+<sub></sub>
+<sup></sup>
+<bdo></bdo>
+<bdi></bdi>
+<address></address>
+<blockquote></blockquote>
+<caption></caption>
+<cite></cite>
+
+<ABBR>Abbreviation</ABBR><br>
+<CITE>Citation</CITE><br>
+<CODE>Source Code</CODE><br>
+<DFN>Definition</DFN><br>
+<EM>Emphasis</EM><br>
+<KBD>Keystrokes</KBD><br>
+<SAMP>Sample (Eg.)</SAMP><br>
+<STRONG>Strong emphasis</STRONG><br>
+<VAR>Programming variable: Max, Count</VAR>
+
+
+<!-- Tables -->
+
+<table>
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+    </tr>
+
+</table>
+
+<!-- Three sections of tables -->
+1)head
+2)body
+3)foot
+
+
+<table border = "1" width = "60%">
+    <caption>Monthly savings</caption>
+    <tr>
+        <th>Month</th>
+        <th>Savings</th>
+    </tr>
+    <tr>
+        <td>January</td>
+        <td>$100</td>
+    </tr>
+</table>
+
+
+<!-- Forms -->
+
+<!-- <input types> -->
+
+1)text
+2)password
+3)radio
+4)checkbox
+5)submit
+6)reset
+7)button
+8)image
+9)file
+10)hidden
+11)date
+12)datetime-local
+13)email
+14)month
+15)number
+16)range
+17)search
+18)tel
+19)time
+20)url
+21)week
+
+<form action="/action_page.php">
+    First name: <input type="text" name="firstname" value="Mickey"><br>
+    Last name: <input type="text" name="lastname" value="Mouse"><br>
+    <input type="submit" value="Submit">
+</form>
+
+<form action="/action_page.php">
+    <input type="text" name="username" placeholder="Username"><br>
+    <input type="password" name="password" placeholder="Password"><br>
+    <input type="submit" value="Submit">
+    <input type="date" name="Date" id="">
+    <input type="datetime-local" name="Date" id="">
+    <input type="email" name="Email" id="">
+    <input type="month" name="Month" id="">
+    <input type="number" name="Number" id="">
+    <input type="range" name="Range" id="">
+    <input type="search" name="Search" id="">
+    <input type="tel" name="Telephone" id="">
+    <input type="time" name="Time" id="">
+    <input type="url" name="URL" id="">
+    <input type="week" name="Week" id="">
+    <input type="file" name="file" id="">
+    <input type="hidden" name="hidden" id="">
+    <input type="reset" value="reset">
+    <input type="color" name="color" id="">
+    <input type="submit" value="submit">
+    <input type="button" value="button">
+    <input type="image" src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" width="50" height="50">
+    <select name="" id="">
+        <option value="volvo" >Volvo</option>
+        <option value="saab" selected>Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+    </select>
+</form>
+
+
+<!--Semantic elements-->
+
+1)article
+2)aside
+3)details
+4)figcaption
+5)figure
+6)footer
+7)header
+8)main
+9)mark
+10)nav
+11)section
+12)summary
+13)time
+
+<!-- <article> -->
+
+<datalist>
+    <option value="Internet Explorer">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+</datalist>
+
+<form>
+    Quantity (between 1 and 5):
+    <input type="number" name="qty" min="1" max="5">
+    <input type="color" name="favcolor" value="#ff0000">
+<input type="submit">
+
+<fieldset>
+    <legend>User Login</legend>
+    <fieldset>User Name: <input type="text"><br></fieldset>
+    Password: <input type="password"><br>
+    <input type="submit" value="Login">
+</fieldset>
+</form>
+
+
+
+HTML5
+
+<!-- HTML5 is the latest version of HTML. It is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and current major version of HTML that is a World Wide Web Consortium (W3C) recommendation. The current specification is known as the HTML Living Standard. The HTML5 specification was published in October 2014. -->
+
+
+
+</body>
+
+</html>

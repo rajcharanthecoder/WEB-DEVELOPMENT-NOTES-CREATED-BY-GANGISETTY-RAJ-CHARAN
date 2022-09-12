@@ -1,0 +1,859 @@
+/* Learn Css: https://www.w3schools.com/css/ */
+
+body {
+    background-color: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Add padding to containers */
+
+.container {
+    padding: 16px;
+    background-color: white;
+}
+
+/* Full-width input fields */
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Overwrite default styles of hr */
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+
+.registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+/* Add a blue text color to links */
+
+a {
+    color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+/* Style the footer */
+
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 700px) {
+    .col {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    /* Hide the label when the screen is less than 700px wide */
+    .registerbtn {
+        width: 100%;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+/* Style the header */
+
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+}
+
+/* Increase the font size of the h1 element */
+
+.header h1 {
+    font-size: 40px;
+}
+
+/* Style the top navigation bar */
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px;
+    /* Should be removed. Only for demonstration */
+}
+
+/* Left and right column */
+
+.column.side {
+    width: 25%;
+}
+
+/* Middle column */
+
+.column.middle {
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+
+    .column.side,
+    .column.middle {
+        width: 100%;
+    }
+}
+
+/* Style the footer */
+
+.footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout - makes the footer stack on top of the columns instead of next to them */
+
+@media screen and (max-width: 600px) {
+    .footer {
+        width: 100%;
+    }
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+
+.button {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.button.active,
+.button:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+
+.button {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+/* learn css in one video */
+
+/*
+CSS stands for Cascading Style Sheets
+
+Styling can be added to HTML elements in 3 ways:
+
+Inline - using a style attribute in HTML elements
+
+Internal - using a <style> element in the HTML <head> section
+
+External - using one or more external CSS files
+
+The most common way to add styling, is to keep the styles in separate CSS
+files.
+
+Inline Styling (Inline CSS)
+
+Inline styling is used to apply a unique style to a single HTML element:
+
+Inline styling uses the style attribute.
+
+This example changes the text color of the <h1> element to blue:
+
+<h1 style="color:blue;">This is a Blue Heading</h1>
+*/
+
+/*Font properties*/
+
+/*Font family*/
+/*Font size*/
+/*Font weight*/
+/*Font style*/
+/*Font variant*/
+/*Font line height*/
+/*Font size adjust*/
+/*Font stretch*/
+/*Font effect*/
+/*Font emphasize*/
+/*Font em box*/
+/*Font em box position*/
+/*Font em box visibility*/
+
+/*SELECTORS*/
+
+/*Universal selector*/
+/*Type selector*/
+/*Class selector*/
+/*ID selector*/
+/*Attribute selector*/
+/*Pseudo-class selector*/
+/*Pseudo-element selector*/
+
+/*COMBINATORS*/
+
+/*Descendant selector*/
+/*Child selector*/
+/*Adjacent sibling selector*/
+/*General sibling selector*/
+
+/*Universal selectors Example*/
+
+* {
+    box-sizing: border-box;
+}
+
+/*Type selectors Example*/
+
+h1 {
+    color: red;
+}
+
+/*Class selectors Example*/
+
+.center {
+    text-align: center;
+    color: red;
+}
+
+/*ID selectors Example*/
+
+#para1 {
+    text-align: center;
+    color: red;
+}
+
+/*Attribute selectors Example*/
+
+a[target="_blank"] {
+    text-decoration: none;
+}
+
+/*Pseudo-class selectors Example*/
+
+a:hover {
+    background-color: yellow;
+}
+
+/*Pseudo-element selectors Example*/
+
+p::first-line {
+    color: red;
+}
+
+/*Descendant selectors Example*/
+
+p a {
+    color: red;
+}
+
+/*Child selectors Example*/
+
+ul>li {
+    color: red;
+}
+
+/*Adjacent sibling selectors Example*/
+
+h1+p {
+    color: red;
+}
+
+/*General sibling selectors Example*/
+
+h1~p {
+    color: red;
+}
+
+/*CSS Colors*/
+
+/*Named colors*/
+/*Hexadecimal colors*/
+/*RGB colors*/
+/*HSL colors*/
+/*HSLA colors*/
+/*Opacity*/
+
+/*Named colors Example*/
+
+p {
+    color: red;
+}
+
+/*Hexadecimal colors Example*/
+
+p {
+    color: #ff0000;
+}
+
+/*RGB colors Example*/
+
+p {
+    color: rgb(255, 0, 0);
+}
+
+/*HSL colors Example*/
+
+p {
+    color: hsl(0, 100%, 50%);
+}
+
+/*HSLA colors Example*/
+
+p {
+    color: hsla(0, 100%, 50%, 0.5);
+}
+
+/*Opacity Example*/
+
+p {
+    opacity: 0.5;
+}
+
+/*CSS Backgrounds*/
+
+/*Background color*/
+/*Background image*/
+/*Background repeat*/
+/*Background attachment*/
+/*Background position*/
+
+/*Background color Example*/
+
+p {
+    background-color: red;
+}
+
+/*Background image Example*/
+
+p {
+    background-image: url("img_tree.png");
+}
+
+/*Background repeat Example*/
+
+p {
+    background-repeat: no-repeat;
+}
+
+/*Background attachment Example*/
+
+p {
+    background-attachment: fixed;
+}
+
+/*Background position Example*/
+
+p {
+    background-position: right top;
+}
+
+/*CSS Borders*/
+
+/*Border style*/
+/*Border width*/
+/*Border color*/
+/*Border radius*/
+
+/*Border style Example*/
+
+p {
+    border-style: solid;
+}
+
+/*Border width Example*/
+
+p {
+    border-width: 5px;
+}
+
+/*Border color Example*/
+
+p {
+    border-color: red;
+}
+
+/*Border radius Example*/
+
+p {
+    border-radius: 25px;
+}
+
+/*CSS Margins*/
+
+/*Margin*/
+
+/*Margin Example*/
+
+p {
+    margin: 50px;
+}
+
+/*CSS Padding*/
+
+/*Padding*/
+
+/*Padding Example*/
+
+p {
+    padding: 50px;
+}
+
+/*CSS Height & Width*/
+
+/*Height*/
+
+/*Width*/
+
+/*Height Example*/
+
+p {
+    height: 100px;
+}
+
+/*Width Example*/
+
+p {
+    width: 100px;
+}
+
+/*CSS Outline*/
+
+/*Outline*/
+
+/*Outline Example*/
+
+p {
+    outline: 5px solid red;
+}
+
+/*CSS Text*/
+
+/*Text color*/
+
+/*Text alignment*/
+
+/*Text decoration*/
+
+/*Text transformation*/
+
+/*Text indentation*/
+
+/*Text shadow*/
+
+/*Text color Example*/
+
+p {
+    color: red;
+}
+
+/*Text alignment Example*/
+
+p {
+    text-align: center;
+}
+
+/*Text decoration Example*/
+
+p {
+    text-decoration: underline;
+}
+
+/*Text transformation Example*/
+
+p {
+    text-transform: uppercase;
+}
+
+/*Text indentation Example*/
+
+p {
+    text-indent: 50px;
+}
+
+/*Text shadow Example*/
+
+p {
+    text-shadow: 2px 2px 5px red;
+}
+
+/*The css flexbox*/
+
+/*The flex container*/
+/*The flex items*/
+/*The flex-direction property*/
+/*The flex-wrap property*/
+/*The flex-flow property*/
+/*The justify-content property*/
+/*The align-items property*/
+/*The align-content property*/
+
+/*The flex container*/
+
+/*The flex container is the parent element, and it must be a flex container to be able to work with the flex items.*/
+
+/*The flex items*/
+
+/*The flex items are the child elements, and they are the flexible layout inside the flex container.*/
+
+/*The flex-direction property*/
+
+/*The flex-direction property specifies the direction of the flexible items.*/
+
+/*The flex-wrap property*/
+
+/*The flex-wrap property specifies whether the flexible items should wrap or not.*/
+
+/*The flex-flow property*/
+
+/*The flex-flow property is a shorthand property for the flex-direction and the flex-wrap properties.*/
+
+/*The justify-content property*/
+
+/*The justify-content property specifies the alignment along the main axis.*/
+
+/*The align-items property*/
+
+/*The align-items property specifies the alignment along the cross axis.*/
+
+/*The align-content property*/
+
+/*The align-content property specifies the alignment along the cross axis when there is extra space in the cross-axis.*/
+
+/*The css grid*/
+
+/*The grid container*/
+/*The grid items*/
+/*The grid-template-columns property*/
+/*The grid-template-rows property*/
+/*The grid-template-areas property*/
+/*The grid-template property*/
+/*The grid-column-gap property*/
+/*The grid-row-gap property*/
+/*The grid-gap property*/
+/*The justify-items property*/
+/*The align-items property*/
+/*The place-items property*/
+/*The justify-content property*/
+/*The align-content property*/
+/*The place-content property*/
+/*The justify-self property*/
+/*The align-self property*/
+/*The place-self property*/
+/*The grid-auto-columns property*/
+/*The grid-auto-rows property*/
+/*The grid-auto-flow property*/
+
+/*The grid container*/
+
+/*The grid container is the parent element, and it must be a grid container to be able to work with the grid items.*/
+/*The grid items*/
+
+/*The grid items are the child elements, and they are the grid layout inside the grid container.*/
+
+/*The grid-template-columns property*/
+
+/*The grid-template-columns property specifies the size of the columns, and how many columns in a grid layout.*/
+
+/*The grid-template-rows property*/
+
+/*The grid-template-rows property specifies the size of the rows, and how many rows in a grid layout.*/
+
+/*The grid-template-areas property*/
+
+/*The grid-template-areas property specifies how to display columns and rows, using named grid items.*/
+
+/*The grid-template property*/
+
+/*The grid-template property is a shorthand property for the grid-template-rows, grid-template-columns, and grid-template-areas properties.*/
+
+/*The grid-column-gap property*/
+
+/*The grid-column-gap property specifies the gap between the columns.*/
+
+/*The grid-row-gap property*/
+
+/*The grid-row-gap property specifies the gap between the rows.*/
+
+/*The grid-gap property*/
+
+/*The grid-gap property is a shorthand property for the grid-row-gap and grid-column-gap properties.*/
+
+/*The justify-items property*/
+
+/*The justify-items property aligns the grid items along the inline (row) axis (as opposed to align-items which aligns along the block (column) axis).*/
+
+/*The align-items property*/
+
+/*The align-items property aligns the grid items along the block (column) axis (as opposed to justify-items which aligns along the inline (row) axis).*/
+
+/*The place-items property*/
+
+/*The place-items property is a shorthand property for the align-items and the justify-items properties.*/
+
+/*The justify-content property*/
+
+/*The justify-content property aligns the grid container's content along the inline (row) axis.*/
+
+/*The align-content property*/
+
+/*The align-content property aligns the grid container's content along the block (column) axis.*/
+
+/*The place-content property*/
+
+/*The place-content property is a shorthand property for the align-content and the justify-content properties.*/
+
+/*The justify-self property*/
+
+/*The justify-self property aligns the grid item inside a cell along the inline (row) axis.*/
+
+/*The align-self property*/
+
+/*The align-self property aligns the grid item inside a cell along the block (column) axis.*/
+
+/*The place-self property*/
+
+/*The place-self property is a shorthand property for the align-self and the justify-self properties.*/
+
+/*The grid-auto-columns property*/
+
+/*The grid-auto-columns property specifies the size of an implicitly-created grid column track or pattern of tracks.*/
+
+/*The grid-auto-rows property*/
+
+/*The grid-auto-rows property specifies the size of an implicitly-created grid row track or pattern of tracks.*/
+
+/*The grid-auto-flow property*/
+
+/*The grid-auto-flow property controls how the auto-placement algorithm works, specifying exactly how auto-placed items get flowed into the grid.*/
+
+
+
+/*The css media queries*/
+
+/*The media types*/
+/*The media features*/
+/*The media queries*/
+
+/*The media types*/
+
+/*The media types are used to specify the type of device the media query should apply to.*/
+
+/*The media features*/
+
+/*The media features are used to specify the characteristics of the device the media query should apply to.*/
+
+/*The media queries*/
+
+/*The media queries are used to apply different styles for different media types/devices.*/
+
+/*The css pseudo-classes*/
+
+/*The link pseudo-classes*/
+/*The user action pseudo-classes*/
+/*The target pseudo-classes*/
+
+/*CSS BOX MODEL*/
+
+/*The box model is the foundation of CSS, and it is used to describe the rectangular boxes that are generated for elements in the document tree and laid out according to the visual formatting model.*/
+
+/*The box model consists of: margins, borders, padding, and the actual content.*/
+
+/*The box model is used to add space around elements, and to separate elements from each other.*/
+
+/*The box model is also used to add borders and background colors to elements.*/
+
+/*The box model is also used to add shadows to elements.*/
+
+/*The box model is also used to add rounded corners to elements.*/
+
+/*The box model is also used to add gradients to elements.*/
+
+/*The box model is also used to add outlines to elements.*/
+
+/*The box model is also used to add box shadows to elements.*/
+
+/*The box model is also used to add text shadows to elements.*/
+
+/*The box model is also used to add transforms to elements.*/
+
+/*The box model is also used to add transitions to elements.*/
+
+/*The box model is also used to add animations to elements.*/
+
+/*The box model is also used to add multiple columns to elements.*/
+
+/*The box model is also used to add flexbox to elements.*/
+
+/*The box model is also used to add css grid to elements.*/
+
+/*The box model is also used to add media queries to elements.*/
+
+/*The box model is also used to add pseudo-classes to elements.*/
+
+/*The box model is also used to add pseudo-elements to elements.*/
+
+/*The box model is also used to add css selectors to elements.*/
+
+/*The box model is also used to add css variables to elements.*/
+
+/*The box model is also used to add css functions to elements.*/
+
+/*The box model is also used to add css units to elements.*/
+
+/*The box model is also used to add css values and keywords to elements.*/
+
+/*The box model is also used to add css at-rules to elements.*/
+
+/*The box model is also used to add css properties to elements.*/
+
+/*The box model is also used to add css rules to elements.*/
+
+/*The box model is also used to add css declarations to elements.*/
+
+/*The box model is also used to add css stylesheets to elements.*/
+
+/*The box model is also used to add css selectors to elements.*/
+
+/*LAYOUTS IN CSS*/
+
+/*The css flexbox layout*/
+/*The css grid layout*/
+
+/*The css flexbox layout*/
+
+/*The flexbox layout is a one-dimensional layout method for laying out items in rows or columns.*/
+
+
+/*POSITION PROPERTY*/
+
+/*The position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky).*/
+
+/*STATIC*/
+
+/*The element is positioned according to the normal flow of the document. The top, right, bottom, and left properties have no effect.*/
+
+/*RELATIVE*/
+
+/*The element is positioned according to the normal flow of the document, and then offset relative to itself based on the values of top, right, bottom, and left.*/
+
+/*FIXED*/
+
+/*The element is positioned according to the normal flow of the document, and then offset relative to the viewport, fixed to the viewport, regardless of whether or not it is inside a scrolling container.*/
+
+/*ABSOLUTE*/
+
+/*The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed relative to the initial containing block.*/
+
+/*STICKY*/
+
+/*The element is positioned according to the normal flow of the document, and then offset relative to its viewport, based on the values of top, right, bottom, and left.*/

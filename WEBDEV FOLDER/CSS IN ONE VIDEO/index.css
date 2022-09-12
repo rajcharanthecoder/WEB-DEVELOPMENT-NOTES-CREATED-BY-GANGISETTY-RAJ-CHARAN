@@ -1,0 +1,156 @@
+/* Basic Css Syntax */
+
+/* body{
+    background-color: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+} */
+
+/* selector{
+    property1: value2;
+    property2: value2;
+    property3: value3;
+} */
+
+/*Tyes of selectors*/
+
+/* element selector */
+
+p {
+    background-color: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Id selector */
+
+#myPara {
+    background-color: yellow;
+}
+
+/* class selector */
+
+.red {
+    background-color: red;
+    color: red;
+}
+
+/*SELECTOR GROUPING*/
+
+.nav,
+div {
+    color: green;
+}
+
+/*Colors in css*/
+
+.class {
+    color: coral;
+    color: rgba(143, 156, 233, 0.226);
+    /*red,green,blue,opacity*/
+
+    color: #ffffff;
+    /*hexadecimal color code*/
+
+    color: hsl(0, 0, 0)
+        /*hue,saturation and */
+}
+
+/*css background*/
+
+body {
+    background-color: aqua;
+    /* background-image: url("/Screenshot\ \(22\).png"); */
+
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-repeat: repeat;
+
+    background-repeat: no-repeat;
+
+    background-position: right top;
+
+    background-attachment: fixed;
+
+    /*shorthand property*/
+
+    background: #ffff00 no-repeat right top fixed;
+}
+
+.class {
+    border-style: solid;
+    border-width: 10px;
+    border-color: blue;
+
+    /*shorthand property*/
+    /* border: 1px solid red; */
+
+    /* border-style:dotted*/
+    /* border-style:dashed*/
+    /* border-style:double*/
+    /* border-style:groove*/
+    /* border-style:ridge*/
+    /* border-style:inset*/
+    /* border-style:outset*/
+    /* border-style:none*/
+    /* border-style:hidden*/
+
+    border-top-style: dashed;
+    border-right-style: groove;
+    border-left-color: green;
+    /* border-bottom-color:red; */
+    border-bottom-style: ridge;
+
+    /*shorthand property*/
+
+    border-color: red green blue yellow;
+
+    /*border-radius*/
+
+    border-radius: 10px;
+    border-radius: 10px 20px;
+    border-radius: 10px 20px 30px;
+    border-radius: 10px 20px 30px 40px;
+
+    /*border-image*/
+
+    border-image: url("/Screenshot\ \(22\).png") 30 30 round;
+
+    /*border-image-outset*/
+
+    border-image-outset: 30px;
+
+    /*border-image-repeat*/
+
+    border-image-repeat: stretch;
+
+    /*border-image-slice*/
+
+    border-image-slice: 30;
+
+    /*border-image-source*/
+
+    border-image-source: url("/Screenshot\ \(22\).png");
+
+    /*border-image-width*/
+
+    border-image-width: 30px;
+}
+
+/*Margin and padding*/
+
+.nav {
+    background: #ffff00;
+
+    width:50%;
+    height:50%;
+    margin: 50px;
+}
+
+.items {
+    background: #fa2500;
+}
+
+.item {
+    background: #102a36;
+}
+
+

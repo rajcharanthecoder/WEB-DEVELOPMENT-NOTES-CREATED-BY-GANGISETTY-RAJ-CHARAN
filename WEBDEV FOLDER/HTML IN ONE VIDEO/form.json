@@ -1,0 +1,13 @@
+{
+    "name":"Rajcharan",
+    "score":11.75,
+    "isAdmin":true,
+    "friends":["Raj","Rajesh","Rajeshwar","Aditya"],
+    "License":null,
+    "address":{
+        "street":"1234 Main St",
+        "city":"Anytown",
+        "state":"CA",
+        "zip":"12345"
+    }
+}
