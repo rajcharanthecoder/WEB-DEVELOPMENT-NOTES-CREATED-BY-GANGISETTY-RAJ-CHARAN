@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--MongoDb Notes By Gangisetty Raj Charan-->
+
+    <!--MongoDb is a NoSql Database-->
+    <!--NoSql is a non relational database-->
+    <!--MongoDb is a document based database-->
+    <!--MongoDb is a cross platform database-->
+    <!--MongoDb is a schema less database-->
+    <!--MongoDb is a distributed database-->
+    <!--MongoDb is a fast database-->
+    <!--MongoDb is a free database-->
+    <!--MongoDb is a open source database-->
+    <!--MongoDb is a high performance database-->
+    <!--MongoDb is a high availability database-->
+    <!--MongoDb is a scalable database-->
+    <!--MongoDb is a flexible database-->
+    <!--MongoDb is a easy to use database-->
+    <!--MongoDb is a easy to learn database-->
+    <!--MongoDb is a easy to maintain database-->
+    <!--MongoDb is a easy to scale database-->
+    <!--MongoDb is a easy to deploy database-->
+    <!--MongoDb is a easy to integrate database-->
+    <!--MongoDb is a easy to manage database-->
+    <!--MongoDb is a easy to administer database-->
+    <!--MongoDb is a easy to configure database-->
+    <!--MongoDb is a easy to install database-->
+    <!--MongoDb is a easy to upgrade database-->
+    <!--MongoDb is a easy to backup database-->
+    <!--MongoDb is a easy to restore database-->
+    <!--MongoDb is a easy to recover database-->
+    <!--MongoDb is a easy to monitor database-->
+
+    <!--More Info About Mongo Db-->
+
+    <!-- MongoDb has seperate fanbase and software -->
+    <!-- Link for mOnogDb: https://www.mongodb.com/ -->
+    <!-- MongoD vs mongoDb -->
+
+    <!--MongoDb is a document based database-->
+
+    <!-- MongoD is a program -->
+
+    <!-- Mongo is the cmd line shell that connects to a specific instance of mongo -->
+
+    <!--MongoDb Commands-->
+
+    <!-- MongoDb Commands -->
+
+    1)To show all the databases in the mongoDb
+    show dbs
+
+    2)To show the current database
+    db
+
+    3)To show all the collections in the current database
+    show collections
+
+    4)To create a database
+    use <database name>
+
+    5)To create a collection
+    db.createCollection("<collection name>")
+    
+    6)To insert a document into a collection
+    db.<collection name>.insertOne({<document>})
+    
+    7)To insert multiple documents into a collection
+    db.<collection name>.insertMany([{<document>},{<document>},{<document>}])
+    
+    8)To find a document in a collection
+    db.<collection name>.find({<document>})
+
+    9)To find a document in a collection with a condition
+    db.<collection name>.find({<document>},{<condition>})
+
+    10)To find a document in a collection with a condition and limit
+    db.<collection name>.find({<document>},{<condition>}).limit(<number>)
+
+    11)To find a document in a collection with a condition and limit and sort
+    db.<collection name>.find({<document>},{<condition>}).limit(<number>).sort({<document>})
+
+    12)To find a document in a collection with a condition and limit and sort and skip
+    db.<collection name>.find({<document>},{<condition>}).limit(<number>).sort({<document>}).skip(<number>)
+
+    13)To find a document in a collection with a condition and limit and sort and skip and count
+    db.<collection name>.find({<document>},{<condition>}).limit(<number>).sort({<document>}).skip(<number>).count()
+
+    14)To find a document in a collection with a condition and limit and sort and skip and count and explain
+    db.<collection name>.find({<document>},{<condition>}).limit(<number>).sort({<document>}).skip(<number>).count().explain()
+    
+    15)To find a document in a collection with a condition and limit and sort and skip and count and explain and pretty
+    db.<collection name>.find({<document>},{<condition>}).limit(<number>).sort({<document>}).skip(<number>).count().explain().pretty()
+
+    16)To find a document in a collection with a condition and limit and sort and skip and count and explain and pretty and hint
+    db.<collection name>.find({<document>},{<condition>}).limit(<number>).sort({<document>}).skip(<number>).count().explain().pretty().hint({<document>})
+
+    17)To find a document in a collection with a condition and limit and sort and skip and count and explain and pretty and hint and snapshot
+    db.<collection name>.find({<document>},{<condition>}).limit(<number>).sort({<document>}).skip(<number>).count().explain().pretty().hint({<document>}).snapshot()
+
+    18)To find a document in a collection with a condition and limit and sort and skip and count and explain and pretty and hint and snapshot and comment
+    db.<collection name>.find({<document>},{<condition>}).limit(<number>).sort({<document>}).skip(<number>).count().explain().pretty().hint({<document>}).snapshot().comment("<comment>")
+
+    19)To find a document in a collection with a condition and limit and sort and skip and count and explain and pretty and hint and snapshot and comment and maxTimeMS
+    db.<collection name>.find({<document>},{<condition>}).limit(<number>).sort({<document>}).skip(<number>).count().explain().pretty().hint({<document>}).snapshot().comment("<comment>").maxTimeMS(<number>)
+
+    20)To find a document in a collection with a condition and limit and sort and skip and count and explain and pretty and hint and snapshot and comment and maxTimeMS and max
+    db.<collection name>.find({<document>},{<condition>}).limit(<number>).sort({<document>}).skip(<number>).count().explain().pretty().hint({<document>}).snapshot().comment("<comment>").maxTimeMS(<number>).max(<number>)
+    
+    21)To find a document in a collection with a condition and limit and sort and skip and count and explain and pretty and hint and snapshot and comment and maxTimeMS and max and min
+    db.<collection name>.find({<document>},{<condition>}).limit(<number>).sort({<document>}).skip(<number>).count().explain().pretty().hint({<document>}).snapshot().comment("<comment>").maxTimeMS(<number>).max(<number>).min(<number>)
+
+    22)To find a document in a collection with a condition and limit and sort and skip and count and explain and pretty and hint and snapshot and comment and maxTimeMS and max and min and returnKey
+    db.<collection name>.find({<document>},{<condition>}).limit(<number>).sort({<document>}).skip(<number>).count().explain().pretty().hint({<document>}).snapshot().comment("<comment>").maxTimeMS(<number>).max(<number>).min(<number>).returnKey()
+
+    23)To find a document in a collection with a condition and limit and sort and skip and count and explain and pretty and hint and snapshot and comment and maxTimeMS and max and min and returnKey and showRecordId
+    db.<collection name>.find({<document>},{<condition>}).limit(<number>).sort({<document>}).skip(<number>).count().explain().pretty().hint({<document>}).snapshot().comment("<comment>").maxTimeMS(<number>).max(<number>).min(<number>).returnKey().showRecordId()
+    
+    24)To find a document in a collection with a condition and limit and sort and skip and count and explain and pretty and hint and snapshot and comment and maxTimeMS and max and min and returnKey and showRecordId and tailable
+    db.<collection name>.find({<document>},{<condition>}).limit(<number>).sort({<document>}).skip(<number>).count().explain().pretty().hint({<document>}).snapshot().comment("<comment>").maxTimeMS(<number>).max(<number>).min(<number>).returnKey().showRecordId().tailable()
+
+    25)To find a document in a collection with a condition and limit and sort and skip and count and explain and pretty and hint and snapshot and comment and maxTimeMS and max and min and returnKey and showRecordId and tailable and awaitData
+    db.<collection name>.find({<document>},{<condition>}).limit(<number>).sort({<document>}).skip(<number>).count().explain().pretty().hint({<document>}).snapshot().comment("<comment>").maxTimeMS(<number>).max(<number>).min(<number>).returnKey().showRecordId().tailable().awaitData()
+    
+    26)To find a document in a collection with a condition and limit and sort and skip and count and explain and pretty and hint and snapshot and comment and maxTimeMS and max and min and returnKey and showRecordId and tailable and awaitData and noCursorTimeout
+    db.<collection name>.find({<document>},{<condition>}).limit(<number>).sort({<document>}).skip(<number>).count().explain().pretty().hint({<document>}).snapshot().comment("<comment>").maxTimeMS(<number>).max(<number>).min(<number>).returnKey().showRecordId().tailable().awaitData().noCursorTimeout()
+    
+    27)To find a document in a collection with a condition and limit and sort and skip and count and explain and pretty and hint and snapshot and comment and maxTimeMS and max and min and returnKey and showRecordId and tailable and awaitData and noCursorTimeout and oplogReplay
+    db.<collection name>.find({<document>},{<condition>}).limit(<number>).sort({<document>}).skip(<number>).count().explain().pretty().hint({<document>}).snapshot().comment("<comment>").maxTimeMS(<number>).max(<number>).min(<number>).returnKey().showRecordId().tailable().awaitData().noCursorTimeout().oplogReplay()
+    
+    28)To find a document in a collection with a condition and limit and sort and skip and count and explain and pretty and hint and snapshot and comment and maxTimeMS and max and min and returnKey and showRecordId and tailable and awaitData and noCursorTimeout and oplogReplay and partial
+    db.<collection name>.find({<document>},{<condition>}).limit(<number>).sort({<document>}).skip(<number>).count().explain().pretty().hint({<document>}).snapshot().comment("<comment>").maxTimeMS(<number>).max(<number>).min(<number>).returnKey().showRecordId().tailable().awaitData().noCursorTimeout().oplogReplay().partial()
+
+    29)To find a document in a collection with a condition and limit and sort and skip and count and explain and pretty and hint and snapshot and comment and maxTimeMS and max and min and returnKey and showRecordId and tailable and awaitData and noCursorTimeout and oplogReplay and partial and batchSize
+    db.<collection name>.find({<document>},{<condition>}).limit(<number>).sort({<document>}).skip(<number>).count().explain().pretty().hint({<document>}).snapshot().comment("<comment>").maxTimeMS(<number>).max(<number>).min(<number>).returnKey().showRecordId().tailable().awaitData().noCursorTimeout().oplogReplay().partial().batchSize(<number>)
+    
+    30)To find a document in a collection with a condition and limit and sort and skip and count and explain and pretty and hint and snapshot and comment and maxTimeMS and max and min and returnKey and showRecordId and tailable and awaitData and noCursorTimeout and oplogReplay and partial and batchSize and collation
+
+    db.<collection name>.find({<document>},{<condition>}).limit(<number>).sort({<document>}).skip(<number>).count().explain().pretty().hint({<document>}).snapshot().comment("<comment>").maxTimeMS(<number>).max(<number>).min(<number>).returnKey().showRecordId().tailable().awaitData().noCursorTimeout().oplogReplay().partial().batchSize(<number>).collation({<document>})
+
+    31)To find a document in a collection with a condition and limit and sort and skip and count and explain and pretty and hint and snapshot and comment and maxTimeMS and max and min and returnKey and showRecordId and tailable and awaitData and noCursorTimeout and oplogReplay and partial and batchSize and collation and readConcern
+    db.<collection name>.find({<document>},{<condition>}).limit(<number>).sort({<document>}).skip(<number>).count().explain().pretty().hint({<document>}).snapshot().comment("<comment>").maxTimeMS(<number>).max(<number>).min(<number>).returnKey().showRecordId().tailable().awaitData().noCursorTimeout().oplogReplay().partial().batchSize(<number>).collation({<document>}).readConcern({<document>})
+
+    32)To find a document in a collection with a condition and limit and sort and skip and count and explain and pretty and hint and snapshot and comment and maxTimeMS and max and min and returnKey and showRecordId and tailable and awaitData and noCursorTimeout and oplogReplay and partial and batchSize and collation and readConcern and maxScan
+    db.<collection name>.find({<document>},{<condition>}).limit(<number>).sort({<document>}).skip(<number>).count().explain().pretty().hint({<document>}).snapshot().comment("<comment>").maxTimeMS(<number>).max(<number>).min(<number>).returnKey().showRecordId().tailable().awaitData().noCursorTimeout().oplogReplay().partial().batchSize(<number>).collation({<document>}).readConcern({<document>}).maxScan(<number>)
+
+    33)To find a document in a collection with a condition and limit and sort and skip and count and explain and pretty and hint and snapshot and comment and maxTimeMS and max and min and returnKey and showRecordId and tailable and awaitData and noCursorTimeout and oplogReplay and partial and batchSize and collation and readConcern and maxScan and maxTimeMS
+    db.<collection name>.find({<document>},{<condition>}).limit(<number>).sort({<document>}).skip(<number>).count().explain().pretty().hint({<document>}).snapshot().comment("<comment>").maxTimeMS(<number>).max(<number>).min(<number>).returnKey().showRecordId().tailable().awaitData().noCursorTimeout().oplogReplay().partial().batchSize(<number>).collation({<document>}).readConcern({<document>}).maxScan(<number>).maxTimeMS(<number>)
+    
+    34)To find a document in a collection with a condition and limit and sort and skip and count and explain and pretty and hint and snapshot and comment and maxTimeMS and max and min and returnKey and showRecordId and tailable and awaitData and noCursorTimeout and oplogReplay and partial and batchSize and collation and readConcern and maxScan and maxTimeMS and min
+
+    db.<collection name>.find({<document>},{<condition>}).limit(<number>).sort({<document>}).skip(<number>).count().explain().pretty().hint({<document>}).snapshot().comment("<comment>").maxTimeMS(<number>).max(<number>).min(<number>).returnKey().showRecordId().tailable().awaitData().noCursorTimeout().oplogReplay().partial().batchSize(<number>).collation({<document>}).readConcern({<document>}).maxScan(<number>).maxTimeMS(<number>).min(<number>)
+
+    35)To find a document in a collection with a condition and limit and sort and skip and count and explain and pretty and hint and snapshot and comment and maxTimeMS and max and min and returnKey and showRecordId and tailable and awaitData and noCursorTimeout and oplogReplay and partial and batchSize and collation and readConcern and maxScan and maxTimeMS and min and returnKey
+
+    db.<collection name>.find({<document>},{<condition>}).limit(<number>).sort({<document>}).skip(<number>).count().explain().pretty().hint({<document>}).snapshot().comment("<comment>").maxTimeMS(<number>).max(<number>).min(<number>).returnKey().showRecordId().tailable().awaitData().noCursorTimeout().oplogReplay().partial().batchSize(<number>).collation({<document>}).readConcern({<document>}).maxScan(<number>).maxTimeMS(<number>).min(<number>).returnKey()
+
+    <document> = {<field name>:<value>}
+
+    <condition> = {<field name>:<value>}
+
+    <number> = <integer>
+    
+    <field name> = <string>
+    
+    <value> = <string> | <integer> | <float> | <boolean> | <date> | <timestamp> | <null> | <regex> | <javascript> | <javascript with scope> | <array> | <object> | <binary> | <object id> | <symbol> | <min key> | <max key> | <decimal> | <db pointer> | <db ref> | <code with scope> | <int32> | <timestamp> | <int64> | <long> | <double> | <decimal128> | <min key> | <max key> | <undefined> | <number> | <number int> | <number long> | <number decimal> | <number double> | <number float> | <number min key> | <number max key> | <number int32> | <number int64> | <number long> | <number double> | <number decimal128> | <number undefined> | <number date> | <number timestamp> | <number object id> | <number binary> | <number db pointer> | <number db ref> | <number code> | <number code with scope> | <number symbol> | <number min key> | <number max key> | <number regex> | <number javascript> | <number javascript with scope> | <number array> | <number object> | <number boolean> | <number null> | <number string> | <number integer> | <number float> | <number double> | <number decimal> | <number min key> | <number max key> | <number undefined> | <number date> | <number timestamp> | <number object id> | <number binary> | <number db pointer> | <number db ref> | <number code> | <number code with scope> | <number symbol> | <number min key> | <number max key> | <number regex> | <number javascript> | <number javascript with scope> | <number array> | <number object> | <number boolean> | <number null> | <number string> | <number integer> | <number float> | <number double> | <number decimal> | <number min key> | <number max key> | <number undefined> | <number date>
+    
+    <!--Some inportant key terms in Mongo Db-->
+
+    1)Database: A database is a physical container for collections. Each database gets its own set of files on the file system. A single MongoDB server typically has multiple databases.
+
+    2)Collection: A collection is a group of MongoDB documents. It is the equivalent of an RDBMS table. A collection exists within a single database. Collections do not enforce a schema. Documents within a collection can have different fields. Typically, all documents in a collection are of similar or related purpose.
+
+    3)Document: A document is a set of key-value pairs. Documents have dynamic schema. Dynamic schema means that documents in the same collection do not need to have the same set of fields or structure, and common fields in a collection's documents may hold different types of data.
+
+    4)BSON: BSON stands for Binary JSON. It is the primary data format for MongoDB. BSON extends the JSON model to provide additional data types and to be binary representation.
+
+    5)Field: A field is a key in a document. The field's value may be any of the BSON data types.
+
+    6)Index: An index is a data structure that improves the speed of read operations in a collection.
+
+    7)Primary Key: A primary key is a field or a set of fields that uniquely identify a document in a collection. The primary key is used to enforce uniqueness for each document in a collection.
+
+    8)Replica Set: A replica set is a group of MongoDB servers that maintain the same data set. Replica sets provide redundancy and high availability.
+
+    9)Sharding: Sharding is a method for distributing data across multiple machines. Sharding allows MongoDB to distribute data across multiple machines and increase data throughput and storage capacity.
+
+    10)GridFS: GridFS is a specification for storing and retrieving large files in MongoDB. GridFS stores files in chunks, spreading the data across multiple files. GridFS also provides a mechanism for accessing files stored in MongoDB.
+
+    11)MapReduce: MapReduce is a programming model for processing and generating large data sets. MapReduce is based on the concept of map and reduce functions.
+
+    12)Aggregation: Aggregation is a framework for data modeling and processing. Aggregation operations process data records and return computed results.
+
+    13)Replication: Replication is the process of synchronizing data across multiple servers. Replication provides redundancy and increases data availability.
+
+    <!--Analogy of MongoDb with Mysql-->
+
+    1)Database = Database
+
+    2)Collection = Table
+
+    3)Document = Row
+
+    4)Field = Column
+
+    <!--Some important commands in MongoDb-->
+
+    1)show dbs: To show all the databases in the mongo db
+
+    2)use <database name>: To use a database
+
+    3)show collections: To show all the collections in the database
+
+    4)db.<collection name>.find(): To find all the documents in a collection
+
+    5)db.<collection name>.find().pretty(): To find all the documents in a collection in a pretty format
+
+    6)db.<collection name>.find().count(): To find the number of documents in a collection
+
+    7)db.<collection name>.find().limit(<number>): To find a number of documents in a collection
+    
+    8)db.<collection name>.find().sort({<document>}): To find a document in a collection with a sort
+
+    9)db.<collection name>.find().skip(<number>): To find a document in a collection with a skip
+    
+    10)db.<collection name>.find().count(): To find the number of documents in a collection
+    
+    11)db.<collection name>.find().explain().pretty(): To find the explaination of a query in a collection
+
+    12)db.<collection name>.find().hint({<document>}): To find a document in a collection with a hint
+    
+    13)db.<collection name>.find().limit(<number>): To find a number of documents in a collection
+    
+    14)db.<collection name>.find().sort({<document>}): To find a document in a collection with a sort
+
+    15)db.<collection name>.find().skip(<number>): To find a document in a collection with a skip
+    
+    16)db.<collection name>.find().count(): To find the number of documents in a collection
+    
+    17)db.<collection name>.find().explain().pretty(): To find the explaination of a query in a collection
+    
+    18)db.<collection name>.find().hint({<document>}): To find a document in a collection with a hint
+    
+    <!--MongoDb-->
+
+    
+
+
+
+    
+
+
+</body>
+</html>

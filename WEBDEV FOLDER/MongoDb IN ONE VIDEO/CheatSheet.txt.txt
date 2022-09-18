@@ -1,0 +1,4 @@
+MongoDb Commands
+
+view all db----->show dbs;
+
